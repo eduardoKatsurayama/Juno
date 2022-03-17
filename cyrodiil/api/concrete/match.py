@@ -1,5 +1,6 @@
 from cyrodiil.api.interface import ApiRequester
-from cyrodiil.utils.constants import ENDPOINTS, DEFAULT_REGION
+from cyrodiil.utils.constants import DEFAULT_REGION, ENDPOINTS
+
 
 class Match(ApiRequester):
     def __init__(self, region=DEFAULT_REGION):

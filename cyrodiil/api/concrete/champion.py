@@ -1,5 +1,6 @@
 from cyrodiil.api.interface import ApiRequester
-from cyrodiil.utils.constants import ENDPOINTS, DEFAULT_PLATFORM
+from cyrodiil.utils.constants import DEFAULT_PLATFORM, ENDPOINTS
+
 
 class Champion(ApiRequester):
     def __init__(self, region=DEFAULT_PLATFORM):

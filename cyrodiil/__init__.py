@@ -1,16 +1,16 @@
 version = '0.0.1'
 
-import os
+import os # noqa : E402
 
-from cyrodiil.api.concrete.account import Account
-from cyrodiil.api.concrete.champion_mastery import ChampionMastery
-from cyrodiil.api.concrete.champion import Champion
-from cyrodiil.api.concrete.league_exp import LeagueExp
-from cyrodiil.api.concrete.league import League
-from cyrodiil.api.concrete.lol_status import LolStatus
-from cyrodiil.api.concrete.match import Match
-from cyrodiil.api.concrete.spectator import Spectator
-from cyrodiil.api.concrete.summoner import Summoner
+from cyrodiil.api.concrete.account import Account # noqa : E402
+from cyrodiil.api.concrete.champion import Champion # noqa : E402
+from cyrodiil.api.concrete.champion_mastery import ChampionMastery # noqa : E402
+from cyrodiil.api.concrete.league import League # noqa : E402
+from cyrodiil.api.concrete.league_exp import LeagueExp # noqa : E402
+from cyrodiil.api.concrete.lol_status import LolStatus # noqa : E402
+from cyrodiil.api.concrete.match import Match # noqa : E402
+from cyrodiil.api.concrete.spectator import Spectator # noqa : E402
+from cyrodiil.api.concrete.summoner import Summoner # noqa : E402
 
 
 def authenticate(riot_token):
@@ -20,7 +20,7 @@ def authenticate(riot_token):
         'Accept-Charset': 'application/x-www-form-urlencoded; charset=UTF-8',
         'Origin': 'https://developer.riotgames.com',
         'X-Riot-Token': '{riot_token}'
-    ''' # noqa
+    ''' # noqa : E501
 
 
 __all__ = [

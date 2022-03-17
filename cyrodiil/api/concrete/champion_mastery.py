@@ -1,12 +1,15 @@
 from cyrodiil.api.interface import ApiRequester
-from cyrodiil.utils.constants import ENDPOINTS, DEFAULT_PLATFORM
+from cyrodiil.utils.constants import DEFAULT_PLATFORM, ENDPOINTS
+
 
 class ChampionMastery(ApiRequester):
     def __init__(self, region=DEFAULT_PLATFORM):
         super().__init__(region)
         self.endpoints = ENDPOINTS['CHAMPION-MASTERY-V4']
 
-    def get_champion_masteries_by_encrypted_summoner_id(self, encrypted_summoner_id):
+    def get_champion_masteries_by_encrypted_summoner_id(
+        self, encrypted_summoner_id
+    ):
         uri = self.endpoints[0]
         return self._request(uri, encrypted_summoner_id=encrypted_summoner_id)
 

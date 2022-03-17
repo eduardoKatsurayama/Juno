@@ -1,8 +1,8 @@
 from __future__ import annotations
 
-from abc import ABC
-import os
 import ast
+import os
+from abc import ABC
 
 import requests
 
@@ -24,5 +24,4 @@ class ApiRequester(ABC):
         response = requests.get(
             endpoint, headers=ast.literal_eval('{'+os.getenv('HEADERS')+'}')
         )
-        
         return response.text
