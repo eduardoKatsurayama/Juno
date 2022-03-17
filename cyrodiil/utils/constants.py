@@ -1,5 +1,3 @@
-from cyrodiil.utils.settings import RIOT_TOKEN
-
 DEFAULT_REGION = 'AMERICAS'
 DEFAULT_PLATFORM = 'BR1'
 
@@ -39,13 +37,7 @@ LANGUAGES = [
     'es_ES','es_MX','fr_FR','hu_HU','id_ID','it_IT','ja_JP','ko_KR','pl_PL',
     'pt_BR','ro_RO','ru_RU','th_TH','tr_TR','vn_VN','zh_CN','zh_MY','zh_TW'
 ]
-HEADERS = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36', # noqa
-    'Accept-Language': 'en-AU,en;q=0.9,pt-BR;q=0.8,pt;q=0.7,en-GB;q=0.6,en-US;q=0.5',
-    'Accept-Charset': 'application/x-www-form-urlencoded; charset=UTF-8',
-    'Origin': 'https://developer.riotgames.com',
-    'X-Riot-Token': RIOT_TOKEN
-}
+
 ENDPOINTS = {
     'ACCOUNT-V1': [
         '/riot/account/v1/accounts/by-puuid/{puuid}',

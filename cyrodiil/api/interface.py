@@ -1,9 +1,12 @@
 from __future__ import annotations
+
 from abc import ABC
+import os
+import ast
 
 import requests
 
-from cyrodiil.utils.constants import HEADERS, PLATFORM, REGIONS
+from cyrodiil.utils.constants import PLATFORM, REGIONS
 
 
 class ApiRequester(ABC):
@@ -18,6 +21,8 @@ class ApiRequester(ABC):
 
     def _request(self, uri, **kwargs):
         endpoint = self._get_endpoint(uri, kwargs)
-        response = requests.get(endpoint, headers=HEADERS)
+        response = requests.get(
+            endpoint, headers=ast.literal_eval('{'+os.getenv('HEADERS')+'}')
+        )
         
         return response.text

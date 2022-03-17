@@ -1,10 +1,7 @@
 # cyrodiil
 
-Criar ambiente:
-`python -m venv ./venv`
+import:
+`import cyrodiil`
 
-Criar .env:
-`cp ./contrib/.env.sample ./.env`
-
-Criar e ir para a nova branch:
-`git checkout -b <nome_da_branch>`
+Authenticate:
+`cyrodiil.authenticate(RIOT_TOKEN)`
