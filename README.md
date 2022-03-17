@@ -1,7 +1,8 @@
 # cyrodiil
 
-import:
-`import cyrodiil`
+Getting started:
+```
+import cyrodiil
 
-Authenticate:
-`cyrodiil.authenticate(RIOT_TOKEN)`
+cyrodiil.authenticate(RIOT_TOKEN)
+```
