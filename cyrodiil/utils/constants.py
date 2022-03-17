@@ -1,6 +1,5 @@
 DEFAULT_REGION = 'AMERICAS'
 DEFAULT_PLATFORM = 'BR1'
-
 REGIONS = {
     'AMERICAS': 'americas.api.riotgames.com',
     'ASIA': 'asia.api.riotgames.com',
@@ -83,14 +82,4 @@ ENDPOINTS = {
         '/lol/summoner/v4/summoners/{encrypted_summoner_id}',
         '/lol/summoner/v4/summoners/me',
     ],
-}
-
-ACCOUNT_HOMOLOG = {
-    'encrypted_summoner_id': '49-4fIqoxanMDpNIbTMXJmVel3zXk8MPz-CtFFCku2FQHB07QrCr2IlX7w',
-    'encrypted_account_id':'ts3MQgWhr9uL7peyqkDjCp0FTdgQHdmcLm08gXxyhMV5hABdrJNJy4gG',
-    'puuid':'2oUZfF0LYJK4HrH8rmTl2vaDKd4bYvjtMP6pyZ4VG4dQuleX48swaoxk7J6ddKb7_nF3OYsX55jLAw',
-    'name':'Panka',
-    'profile_icon_id':7,
-    'revision_date':1643042115000,
-    'summoner_level':80,
 }
