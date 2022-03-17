@@ -1,4 +1,7 @@
-from src.utils.settings import RIOT_TOKEN
+from cyrodiil.utils.settings import RIOT_TOKEN
+
+DEFAULT_REGION = 'AMERICAS'
+DEFAULT_PLATFORM = 'BR1'
 
 REGIONS = {
     'AMERICAS': 'americas.api.riotgames.com',
@@ -47,8 +50,8 @@ ENDPOINTS = {
     'ACCOUNT-V1': [
         '/riot/account/v1/accounts/by-puuid/{puuid}',
         '/riot/account/v1/accounts/by-riot-id/{game_name}/{tag_line}',
-        '/riot/account/v1/active-shards/by-game/{game}/by-puuid/{puuid}'
         '/riot/account/v1/accounts/me',
+        '/riot/account/v1/active-shards/by-game/{game}/by-puuid/{puuid}',
     ],
     'CHAMPION-MASTERY-V4': [
         '/lol/champion-mastery/v4/champion-masteries/by-summoner/{encrypted_summoner_id}', # noqa
@@ -56,7 +59,7 @@ ENDPOINTS = {
         '/lol/champion-mastery/v4/scores/by-summoner/{encrypted_summoner_id}',
     ],
     'CHAMPION-V3': [
-        '/lol/platform/v3/champion-rotations'
+        '/lol/platform/v3/champion-rotations',
     ],
     'LEAGUE-EXP-V4': [
         '/lol/league-exp/v4/entries/{queue}/{tier}/{division}',
@@ -85,7 +88,17 @@ ENDPOINTS = {
         '/lol/summoner/v4/summoners/by-account/{encrypted_account_id}',
         '/lol/summoner/v4/summoners/by-name/{summoner_name}',
         '/lol/summoner/v4/summoners/by-puuid/{encrypted_puuid}',
-        '/lol/summoner/v4/summoners/{encryptedSummoner_id}',
+        '/lol/summoner/v4/summoners/{encrypted_summoner_id}',
         '/lol/summoner/v4/summoners/me',
     ],
+}
+
+ACCOUNT_HOMOLOG = {
+    'encrypted_summoner_id': '49-4fIqoxanMDpNIbTMXJmVel3zXk8MPz-CtFFCku2FQHB07QrCr2IlX7w',
+    'encrypted_account_id':'ts3MQgWhr9uL7peyqkDjCp0FTdgQHdmcLm08gXxyhMV5hABdrJNJy4gG',
+    'puuid':'2oUZfF0LYJK4HrH8rmTl2vaDKd4bYvjtMP6pyZ4VG4dQuleX48swaoxk7J6ddKb7_nF3OYsX55jLAw',
+    'name':'Panka',
+    'profile_icon_id':7,
+    'revision_date':1643042115000,
+    'summoner_level':80,
 }
