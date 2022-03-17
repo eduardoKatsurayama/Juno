@@ -1,4 +1,14 @@
+from re import search
 from setuptools import find_packages, setup
+
+with open('README.md') as f:
+    README = f.read()
+
+with open('cyrodiil/__init__.py') as f:
+    version = search(r'version = \"(.*)\"', f.read()).group(1)
+
+with open('requirements/dev.txt') as f:
+    tests = f.read().splitlines()[2:]
 
 setup(
     name='cyrodiil',
@@ -11,6 +21,6 @@ setup(
     description=(
         'Cyrodiil is a library that abstracts Riot Games API requests'
     ),
-    long_description=open('README.md').read(),
-    tests_require=open('requirements/dev.txt').read().splitlines()[2:],
+    long_description=README,
+    tests_require=tests,
 )
