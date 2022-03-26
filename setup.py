@@ -22,7 +22,7 @@ setup(
     install_requires=dependencies,
     version=version,
     description=(
-        'Cyrodiil is a library that abstracts Riot Games API requests'
+        'Juno is a library that abstracts Riot Games API requests'
     ),
     long_description=README,
     tests_require=tests,

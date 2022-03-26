@@ -1,4 +1,4 @@
-from juno.api.interface import ApiRequester
+from ..interface import ApiRequester
 from juno.utils.constants import DEFAULT_REGION, ENDPOINTS
 
 
