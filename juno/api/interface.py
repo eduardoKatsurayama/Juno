@@ -3,6 +3,7 @@ from __future__ import annotations
 import ast
 import os
 from abc import ABC
+import json
 
 import requests
 
@@ -24,4 +25,5 @@ class ApiRequester(ABC):
         response = requests.get(
             endpoint, headers=ast.literal_eval('{'+os.getenv('HEADERS')+'}')
         )
-        return response.text
+        response = '{"content": ' + response.text + '}'
+        return json.loads(response)
