@@ -1,5 +1,5 @@
-from cyrodiil.api.interface import ApiRequester
-from cyrodiil.utils.constants import DEFAULT_REGION, ENDPOINTS
+from juno.api.interface import ApiRequester
+from juno.utils.constants import DEFAULT_REGION, ENDPOINTS
 
 
 class Match(ApiRequester):

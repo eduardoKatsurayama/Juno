@@ -2,15 +2,15 @@ version = '0.0.1'
 
 import os # noqa : E402
 
-from cyrodiil.api.concrete.account import Account # noqa : E402
-from cyrodiil.api.concrete.champion import Champion # noqa : E402
-from cyrodiil.api.concrete.champion_mastery import ChampionMastery # noqa : E402
-from cyrodiil.api.concrete.league import League # noqa : E402
-from cyrodiil.api.concrete.league_exp import LeagueExp # noqa : E402
-from cyrodiil.api.concrete.lol_status import LolStatus # noqa : E402
-from cyrodiil.api.concrete.match import Match # noqa : E402
-from cyrodiil.api.concrete.spectator import Spectator # noqa : E402
-from cyrodiil.api.concrete.summoner import Summoner # noqa : E402
+from juno.api.concrete.account import Account # noqa : E402
+from juno.api.concrete.champion import Champion # noqa : E402
+from juno.api.concrete.champion_mastery import ChampionMastery # noqa : E402
+from juno.api.concrete.league import League # noqa : E402
+from juno.api.concrete.league_exp import LeagueExp # noqa : E402
+from juno.api.concrete.lol_status import LolStatus # noqa : E402
+from juno.api.concrete.match import Match # noqa : E402
+from juno.api.concrete.spectator import Spectator # noqa : E402
+from juno.api.concrete.summoner import Summoner # noqa : E402
 
 
 def authenticate(riot_token):

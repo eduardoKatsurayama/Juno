@@ -6,7 +6,7 @@ from abc import ABC
 
 import requests
 
-from cyrodiil.utils.constants import PLATFORM, REGIONS
+from juno.utils.constants import PLATFORM, REGIONS
 
 
 class ApiRequester(ABC):

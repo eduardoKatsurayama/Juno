@@ -7,15 +7,15 @@ with open('README.md') as f:
 with open('requirements/prod.txt') as f:
     dependencies = f.read().splitlines()
 
-with open('cyrodiil/__init__.py') as f:
+with open('juno/__init__.py') as f:
     version = search(r"version = \'(.*)\'", f.read()).group(1)
 
 with open('requirements/dev.txt') as f:
     tests = f.read().splitlines()[2:]
 
 setup(
-    name='cyrodiil',
-    url='https://github.com/eduardoKatsurayama/cyrodiil.git',
+    name='juno',
+    url='https://github.com/eduardoKatsurayama/juno.git',
     author=['Eduardo Katsurayama'],
     author_email='eduardoabreu.db@gmail.com',
     packages=find_packages(),

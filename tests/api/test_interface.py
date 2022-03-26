@@ -1,7 +1,7 @@
 import pytest
 
-from cyrodiil.api.interface import ApiRequester
-from cyrodiil.utils.constants import PLATFORM
+from juno.api.interface import ApiRequester
+from juno.utils.constants import PLATFORM
 
 
 class TestApiRequester:

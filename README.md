@@ -2,7 +2,7 @@
 
 Getting started:
 ```
-import cyrodiil
+import juno
 
-cyrodiil.authenticate(RIOT_TOKEN)
+juno.authenticate(RIOT_TOKEN)
 ```
