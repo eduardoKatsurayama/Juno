@@ -1,4 +1,4 @@
-# cyrodiil
+# Juno
 
 Getting started:
 ```
