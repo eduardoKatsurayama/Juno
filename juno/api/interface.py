@@ -7,7 +7,7 @@ import json
 
 import requests
 
-from ..utils.constants import PLATFORM, REGIONS
+from ..constants import PLATFORM, REGIONS
 
 
 class ApiRequester(ABC):

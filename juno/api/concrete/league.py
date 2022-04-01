@@ -1,5 +1,5 @@
 from ..interface import ApiRequester
-from juno.utils.constants import DEFAULT_PLATFORM, ENDPOINTS
+from juno.constants import DEFAULT_PLATFORM, ENDPOINTS
 
 
 class League(ApiRequester):

@@ -1,7 +1,7 @@
 import pytest
 
 from juno.api.interface import ApiRequester
-from juno.utils.constants import PLATFORM
+from juno.constants import PLATFORM
 
 
 class TestApiRequester:
